@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #20242f;
+    --signup-professional: #f2f3f7;
+    --professional: #fec465;
+    --input-bg: #363b4a;
+    font-size: 16px;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Bold/Gilroy-Bold.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-Bold/Gilroy-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Gilroy-Bold/Gilroy-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-Bold/Gilroy-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Gilroy-Bold/Gilroy-Bold.svg') format('svg'); /* Legacy iOS */
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.ttf')  format('truetype'), 
+         url('fonts/Gilroy-ExtraBold/Gilroy-ExtraBold.svg') format('svg'); /* Legacy iOS */
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Heavy/Gilroy-Heavy.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-Heavy/Gilroy-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-Heavy/Gilroy-Heavy.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 900;
+         
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Light/Gilroy-Light.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-Light/Gilroy-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Gilroy-Light/Gilroy-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-Light/Gilroy-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Gilroy-Light/Gilroy-Light.svg') format('svg'); /* Legacy iOS */
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Medium/Gilroy-Medium.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-Medium/Gilroy-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Gilroy-Medium/Gilroy-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-Medium/Gilroy-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Gilroy-Medium/Gilroy-Medium.svg') format('svg'); /* Legacy iOS */
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular/Gilroy-Regular.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-Regular/Gilroy-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-Regular/Gilroy-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Gilroy-Regular/Gilroy-Regular.svg') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-SemiBold/Gilroy-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Gilroy-SemiBold/Gilroy-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Gilroy-SemiBold/Gilroy-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/Gilroy-SemiBold/Gilroy-SemiBold.svg') format('svg'); /* Legacy iOS */
+    font-weight: 600;
+  }
+
+
+  
+html {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      scroll-behavior: smooth;
+      
+  }
+
+  body {
+    background: var(--main-bg-color);
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy', sans-serif;
+    
+   
+  
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 30px;
+    
+    
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 180px;
+}
+
+.arrow-logo {
+    width: 40px;
+    margin-right: 60px;
+}
+
+.section-1 {
+    
+    padding: 40px 190px;
+    
+}
+
+.signup-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--signup-professional);
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin-bottom: 50px;
+}
+
+.signup-title span {
+    color: var(--professional);
+}
+
+.steps {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--signup-professional);
+    font-weight: 300;
+    margin-bottom: 35px;
+}
+
+.steps span {
+    color: var(--professional);
+    margin-right: 10px;
+}
+
+#signup-form {
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.form-elements-wrapper {
+    width: 50%;
+    
+    
+}
+
+.form-elements-wrapper-margin-right {
+    margin-right: 22px;
+}
+
+.form-elements-wrapper-margin-left {
+    margin-left: 22px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+
+.half-input-size{
+    width: 48%;
+}
+
+.full-input-size {
+    width: 100%;
+}
+
+.quarter-input-size {
+    width: 15%;
+}
+
+.three-quarters-input-size {
+    width: 88%;
+}
+
+.small-input-size {
+    width: 8%;
+    /* min-width: 40px; */
+
+}
+
+
+.single-input-wrapper {
+    
+    
+    height: 40px;
+    background: var(--input-bg);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.single-input-wrapper-big {
+    height: 170px;
+    background: var(--input-bg);
+    outline: none;
+    
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 15px;
+    color: var(--signup-professional);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    
+}
+
+.single-input-wrapper-big:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.professional-summary {
+    resize: none;
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: var(--signup-professional); 
+    border-radius: 10px;
+  }
+
+
+
+.input-field {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: none;
+    color: var(--signup-professional);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.textarea-field {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: none;
+    color: var(--signup-professional);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.inner-input-size {
+    width: 93%;
+   
+}
+
+.inner-input-size-2 {
+    width: 83%;
+}
+
+.inner-input-size-3 {
+    width: 90%;
+}
+
+.error-border {
+    border-bottom: 2px solid red;
+}
+
+.absolute-positioning-parent {
+    position: relative;
+}
+
+.indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background: white;
+    color: var(--input-bg);
+    background: red;
+}
+
+.indicator-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.indicator-wrapper-full-width-input {
+    top: -50%;
+    right: -70px;
+}
+
+.indicator-wrapper-half-width-input {
+    top: -50%;
+    right: -70px;;
+}
+.error-message {
+    position: relative;
+    width: auto;
+    font-size: 0.8rem;
+    right: 0;
+    top: 50%;
+    color: var(--signup-professional);
+    background: black;
+    padding: 3px 14px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    z-index: 100;
+}
+
+div.error-message:before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid black;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    
+     
+  }
+
+.mobile-code {
+    background: var(--input-bg);
+    border: none;
+    width: 100%;
+    color: var(--signup-professional);
+    font-family: 'Gilroy', sans-serif;
+}
+
+.mobile-code-min-width {
+    min-width: 60px;
+}
+
+.extra-padding {
+    padding: 0px 4px;
+}
+
+select:focus {
+    outline: none;
+    border: none;
+}
+
+.no-display {
+    display: none;
+}
+
+.border-none {
+    border-bottom: none;
+}
+
+.buttons-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.btn {
+    width: 120px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: 1px solid var(--signup-professional);
+    background: transparent;
+    color: var(--signup-professional);
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    outline: none;
+
+}
+
+.btn-margin-left {
+    margin-left: 25px;
+}
+
+.btn-main {
+    background: var(--professional);
+    border: none;
+    color: var(--main-bg-color);
+}
+
+.note {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--signup-professional);
+    opacity: 0.3;
+    font-size: 0.8rem;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .flex-direction-column {
+        flex-direction: column;
+    }
+
+    .scale-input-100 {
+        width: 100%;
+        
+
+    }
+
+    .margin-bottom-25 {
+        margin-bottom: 25px;
+    }
+
+    .section-1 {
+    
+        padding: 40px 80px;
+    }
+
+    .note {
+        bottom: -20px;
+    }
+  
+
+}
+
+@media only screen and (max-width: 700px) { 
+
+    .section-1 {
+    
+        padding: 40px 25px;
+    }
+
+    #signup-form {
+        
+        flex-direction: column;
+        
+    }
+
+    .form-elements-wrapper-margin-left {
+        margin-left: 0;
+    }
+
+    .form-elements-wrapper-margin-right {
+        margin-right: 0;
+    }
+
+    .form-elements-wrapper {
+        width: 100%;
+    }
+
+    .note {
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons-wrapper {
+        justify-content: space-between;
+    }
+
+    .btn-margin-left {
+        margin-left: 0px;
+    }
+
+   
+    
+}
