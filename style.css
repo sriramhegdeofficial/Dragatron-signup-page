@@ -489,6 +489,10 @@ select:focus {
        margin-bottom: 40px;
     }
 
+    .logo-wrapper {
+        transform: translateY(-10px);
+    }
+
     .section-1 {
     
         padding: 40px 25px;
