@@ -189,6 +189,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    
 }
 
 
@@ -202,18 +203,19 @@ header {
 }
 
 .quarter-input-size {
-    width: 15%;
+    width: 50px;
+    margin-right: 20px;
 }
 
-.three-quarters-input-size {
-    width: 88%;
-}
+
 
 .small-input-size {
-    width: 8%;
-    /* min-width: 40px; */
+    width: 40px;
+    margin-left: 20px;
 
 }
+
+
 
 
 .single-input-wrapper {
@@ -247,6 +249,9 @@ header {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+.flex-grow-input {
+    flex: 1 1 auto;
+}
 .professional-summary {
     resize: none;
     overflow: auto;
